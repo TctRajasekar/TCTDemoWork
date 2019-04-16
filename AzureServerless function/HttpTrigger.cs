@@ -12,6 +12,7 @@ namespace AzureServerless_function
 {
     public static class HttpTrigger
     {
+        // Azure Function
         [FunctionName("HttpTrigger")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
